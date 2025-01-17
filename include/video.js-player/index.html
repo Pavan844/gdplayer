@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>video.js player (with Custom Blue Skin CSS)</title>
+  
+  <!-- CSS Code -->
+  <!--Add video.js Latest CSS Stylesheet-->
+  <link href="https://vjs.zencdn.net/7.17.0/video-js.css" rel="stylesheet" />
+  <!-- Video.js base Extra CSS -->
+  <link href="https://unpkg.com/video.js@7/dist/video-js.min.css" rel="stylesheet"/>
+  <!-- Video.js Custom Blue Skin CSS -->
+  <link href="include/video.js-blue-skin/video.js-custom-blue-skin-style.css" rel="stylesheet"/>
+  <!-- video.js-quality-selector.css -->
+  <link href="include/video.js-quality-selector/quality-selector.css" rel="stylesheet"/>
+  <link rel='stylesheet' href='https://unpkg.com/silvermine-videojs-quality-selector/dist/css/quality-selector.css'>
+  
+  <!-- css -->
+  <link href="include/styles.css" rel="stylesheet"/>
+
+</head>
+
+<body>
+<!-- Video -->
+<div id="div_video" class="frame_border">
+<video id="video_ctrl" 
+class="video-js vjs-fluid" 
+controls 
+preload="auto"  
+width="100%" 
+height="auto"  
+poster="http://video-js.zencoder.com/oceans-clip.jpg" 
+data-setup='{ "aspectRatio":"640:267", "playbackRates": [0.5, 0.75, 1, 1.25, 1.5, 1.75, 2, 4] }'
+>
+
+   <source src="https://upload.wikimedia.org/wikipedia/commons/transcoded/a/ab/Caminandes_3_-_Llamigos_-_Blender_Animated_Short.webm/Caminandes_3_-_Llamigos_-_Blender_Animated_Short.webm.1080p.webm" type="video/mp4" label="1080P">
+   <source src="https://upload.wikimedia.org/wikipedia/commons/transcoded/a/ab/Caminandes_3_-_Llamigos_-_Blender_Animated_Short.webm/Caminandes_3_-_Llamigos_-_Blender_Animated_Short.webm.720p.webm" type="video/mp4" label="720P">
+   <source src="https://upload.wikimedia.org/wikipedia/commons/transcoded/a/ab/Caminandes_3_-_Llamigos_-_Blender_Animated_Short.webm/Caminandes_3_-_Llamigos_-_Blender_Animated_Short.webm.480p.webm" type="video/mp4" label="480P">
+   <source src="https://upload.wikimedia.org/wikipedia/commons/transcoded/a/ab/Caminandes_3_-_Llamigos_-_Blender_Animated_Short.webm/Caminandes_3_-_Llamigos_-_Blender_Animated_Short.webm.360p.webm" type="video/mp4" label="360P" selected="true">
+   
+   <!--
+   <track
+   kind="captions"
+   label="English"
+   srclang="en"
+   src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.en.vtt"
+   default/>
+   -->
+   
+</video>
+</div>
+
+<!-- JS Code -->
+  <!--Add video.js Latest JS Script-->
+  <script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>
+  <!--If you'd like to support IE8 (for Video.js versions prior to v7) --> 
+  <script src='https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js'></script>	
+  <!-- video.js-quality-selector js-->
+  <script src="include/video.js-quality-selector/silvermine-videojs-quality-selector.min.js"></script>
+  <!-- js -->
+  <script src="include/scripts.js"></script>
+  
+</body>
+</html>
